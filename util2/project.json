@@ -1,0 +1,19 @@
+{
+  "name": "util2",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "util2/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../coverage/util2"
+      }
+    }
+  }
+}
